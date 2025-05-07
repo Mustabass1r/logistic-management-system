@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace LogiticsManagment.Controllers
+namespace LogisticsManagement.Controllers
 {
     public class RouteController : Controller
     {

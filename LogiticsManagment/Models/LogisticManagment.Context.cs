@@ -29,7 +29,7 @@ namespace LogiticsManagment.Models
     
         public virtual DbSet<City> Cities { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }    
         public virtual DbSet<Package> Packages { get; set; }
         public virtual DbSet<Payment> Payments { get; set; }
         public virtual DbSet<Rate> Rates { get; set; }

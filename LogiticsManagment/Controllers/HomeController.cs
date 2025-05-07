@@ -4,13 +4,15 @@ using System.Data.Entity;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Web.Mvc;
-using LogiticsManagment.Interfaces;
+using LogisticsManagement.Interfaces;
 using LogiticsManagment.Models;
-using LogiticsManagment.Observers;
+using LogisticsManagement.Observers;
 using LogiticsManagment.ViewModels;
 using Microsoft.Ajax.Utilities;
+using LogisticsManagement.Models;
+using LogisticsManagement.ViewModels;
 
-namespace LogiticsManagment.Controllers
+namespace LogisticsManagement.Controllers
 {
     public class HomeController : Controller
     {
@@ -134,7 +136,8 @@ namespace LogiticsManagment.Controllers
                     model.Shipment.customer_id = lastCustomer != null ? lastCustomer.customer_id : 1000;
                     model.Shipment.shipment_date = DateTime.Now;
 
-                    DeliveryDateCalculator deliveryDateCalculator = new DeliveryDateCalculator();
+                    DeliveryDateCalculator
+                        deliveryDateCalculator = new DeliveryDateCalculator();
                     model.Shipment.estimated_delivery_date = deliveryDateCalculator.CalculateEstimatedDeliveryDate(model.Shipment.source_city_name, model.Shipment.destination_city_name, model.Shipment.delivery_method);
 
                     db.Shipments.Add(model.Shipment);

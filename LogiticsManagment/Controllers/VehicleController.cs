@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
 
-namespace LogiticsManagment.Controllers
+namespace LogisticsManagement.Controllers
 {
     public class VehicleController : Controller
     {

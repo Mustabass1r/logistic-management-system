@@ -1,10 +1,11 @@
-﻿using LogiticsManagment.Models;
+﻿using LogisticsManagement.Models;
+using LogiticsManagment.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace LogiticsManagment.ViewModels
+namespace LogisticsManagement.ViewModels
 {
     public class DeliveryDateCalculator
     {

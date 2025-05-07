@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace LogiticsManagment
+namespace LogisticsManagement
 {
     public class FilterConfig
     {

@@ -1,11 +1,11 @@
-﻿using LogiticsManagment.Interfaces;
-using LogiticsManagment.Models;
+﻿using LogisticsManagement.Interfaces;
+using LogisticsManagement.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace LogiticsManagment.Observers
+namespace LogisticsManagement.Observers
 {
     public class PaymentProcessedObserver : IOrderObserver
     {

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace LogiticsManagment
+namespace LogisticsManagement
 {
     public class BundleConfig
     {
